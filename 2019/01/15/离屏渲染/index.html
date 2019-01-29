@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>Hello World | Watering</title>
+    <title>离屏渲染 | Watering</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -12,18 +12,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta name="description" content="#####1、什么是离屏渲染    离屏渲染就是在当前屏幕缓冲区以外，新开辟一个缓冲区进行操作。    离屏渲染的代价很高，想要进行离屏渲染，首选要创建一个新的缓冲区，屏幕渲染会有一个上下文环境的一个概念，离屏渲染的整个过程需要切换上下文环境，先从当前屏幕切换到离屏，等结束后，又要将上下文环境切换回来。这也是为什么会消耗性能的原因了。    由于垂直同步的机制，如果在一个 HSync 时间内，CP">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Hello World | Watering">
-    <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta name="twitter:title" content="离屏渲染 | Watering">
+    <meta name="twitter:description" content="#####1、什么是离屏渲染    离屏渲染就是在当前屏幕缓冲区以外，新开辟一个缓冲区进行操作。    离屏渲染的代价很高，想要进行离屏渲染，首选要创建一个新的缓冲区，屏幕渲染会有一个上下文环境的一个概念，离屏渲染的整个过程需要切换上下文环境，先从当前屏幕切换到离屏，等结束后，又要将上下文环境切换回来。这也是为什么会消耗性能的原因了。    由于垂直同步的机制，如果在一个 HSync 时间内，CP">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Hello World | Watering">
-    <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta property="og:title" content="离屏渲染 | Watering">
+    <meta property="og:description" content="#####1、什么是离屏渲染    离屏渲染就是在当前屏幕缓冲区以外，新开辟一个缓冲区进行操作。    离屏渲染的代价很高，想要进行离屏渲染，首选要创建一个新的缓冲区，屏幕渲染会有一个上下文环境的一个概念，离屏渲染的整个过程需要切换上下文环境，先从当前屏幕切换到离屏，等结束后，又要将上下文环境切换回来。这也是为什么会消耗性能的原因了。    由于垂直同步的机制，如果在一个 HSync 时间内，CP">
 
     
     <meta name="author" content="Watering">
@@ -40,7 +37,7 @@ Quick">
     <link rel="alternate" type="application/rss+xml" title="Watering" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://yoursite.com/2019/01/15/hello-world/"/>
+    <link rel="canonical" href="http://yoursite.com/2019/01/15/离屏渲染/"/>
 
                  
 </head>
@@ -157,19 +154,16 @@ Quick">
       </span> 
    
     </div>
-    <h1 class="post-title">Hello World</h1>
+    <h1 class="post-title">离屏渲染</h1>
   </header>
 
   <section class="post">
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <p>#####1、什么是离屏渲染<br>    离屏渲染就是在当前屏幕缓冲区以外，新开辟一个缓冲区进行操作。<br>    离屏渲染的代价很高，想要进行离屏渲染，首选要创建一个新的缓冲区，屏幕渲染会有一个上下文环境的一个概念，离屏渲染的整个过程需要切换上下文环境，先从当前屏幕切换到离屏，等结束后，又要将上下文环境切换回来。这也是为什么会消耗性能的原因了。<br>    由于垂直同步的机制，如果在一个 HSync 时间内，CPU 或者 GPU 没有完成内容提交，则那一帧就会被丢弃，等待下一次机会再显示，而这时显示屏会保留之前的内容不变。这就是界面卡顿的原因。<br>    CPU在绘制渲染视图时做了大量的工作。离屏渲染发生在 GPU 层面上，会创建新的渲染缓冲区，会触发 OpenGL 的多通道渲染管线，图形上下文的切换会造成额外的开销，增加 GPU 工作量。如果 CPU GPU 累计耗时 16.67 毫秒还没有完成，就会造成卡顿掉帧。<br>    圆角属性、蒙层遮罩 都会触发离屏渲染。指定了以上属性，标记了它在新的图形上下文中，在未愈合之前，不可以用于显示的时候就出发了离屏渲染。</p>
+<p>#####2、在OpenGL中，GPU有2种渲染方式</p>
+<p>2.1.On-Screen Rendering：当前屏幕渲染，在当前用于显示的屏幕缓冲区进行渲染操作<br>2.2.Off-Screen Rendering：离屏渲染，在当前屏幕缓冲区以外新开辟一个缓冲区进行渲染操作</p>
+<p>#####3、离屏渲染消耗性能的原因</p>
+<p>需要创建新的缓冲区<br>离屏渲染的整个过程，需要多次切换上下文环境，先是从当前屏幕（On-Screen）切换到离屏（Off-Screen）；等到离屏渲染结束以后，将离屏缓冲区的渲染结果显示到屏幕上，又需要将上下文环境从离屏切换到当前屏幕</p>
+<p>#####4、哪些操作会触发离屏渲染？<br>【重写drawRect】<br>【光栅化】 layer.shouldRasterize = YES（光栅化会触发离屏渲染,开启 Rasterization=true 后，GPU 只合成一次内容，然后复用合成的结果；合成的内容超过 100ms 没有使用会从缓存里移除，在更新内容时还会产生更多的离屏渲染。对于内容不发生变化的视图，原本拖后腿的离屏渲染就成为了助力)<br>【遮罩】layer.mask（Mask 效果无法取消离屏渲染，使用混合图层的方法来模拟 mask 效果，性能各方面都是和无效果持平）<br>【圆角】  同时设置 layer.masksToBounds = YES、layer.cornerRadius大于0（maskToBounds并用才会触发）<br>【阴影】layer.shadowXXX，如果设置了 layer.shadowPath 就不会产生离屏渲染（Shawdow 可以通过指定路径来取消离屏渲染）<br>【透明度】layer.allowsGroupOpacity<br>（GroupOpacity 是指 CALayer 的allowsGroupOpacity属性，UIView 的alpha属性等同于 CALayer opacity属性，<br>开启离屏渲染的条件是：layer.opacity != 1.0并且有子 layer 或者背景图。）<br>layer.allowsEdgeAntialiasing（该属性用于消除锯齿，离屏渲染条件旋转视图并且设置layer.allowsEdgeAntialiasing = true)</p>
 
   </section>
 
@@ -181,32 +175,17 @@ Quick">
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">Newer Post</span>
-                <h2 class="post-list__post-title post-title"><a href="/2019/01/15/WateringMyFc/" title="WateringMyFC">WateringMyFC</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/2019/01/15/hello-world/" title="Hello World">Hello World</a></h2>
                 <p class="excerpt">
                 
-                欢迎使用 Hexo! 这是我的第一篇文章.。查看文件 更多信息. 如果您在使用Hexo时遇到任何问题, 您可以在 troubleshooting 中找到答案 ，GitHub。
-快速启动创建一个新帖子1$ hexo new &#34;My New Post&#34;
-更多信息: Writing
-运行服务器1$ hex
+                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2019-01-15T01:45:10.643Z" class="post-list__meta--date date">2019-01-15</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/01/15/WateringMyFc/">查看更多</a></div>
+                <div class="post-list__meta"><time datetime="2019-01-15T01:45:10.643Z" class="post-list__meta--date date">2019-01-15</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/01/15/hello-world/">查看更多</a></div>
                            
             </div>
         
         
-               
-            <div class="read-more-item">
-                <span class="read-more-item-dim">Older Post</span>
-                <h2 class="post-list__post-title post-title"><a href="/2019/01/15/离屏渲染/" title="离屏渲染">离屏渲染</a></h2>
-                <p class="excerpt">
-                
-                #####1、什么是离屏渲染    离屏渲染就是在当前屏幕缓冲区以外，新开辟一个缓冲区进行操作。    离屏渲染的代价很高，想要进行离屏渲染，首选要创建一个新的缓冲区，屏幕渲染会有一个上下文环境的一个概念，离屏渲染的整个过程需要切换上下文环境，先从当前屏幕切换到离屏，等结束后，又要将上下文环境切换回
-                &hellip;
-                </p>
-                <div class="post-list__meta"><time datetime="2019-01-15T01:45:10.643Z" class="post-list__meta--date date">2019-01-15</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2019/01/15/离屏渲染/">查看更多</a></div>
-                       
-            </div>
         
      
    
